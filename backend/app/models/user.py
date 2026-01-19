@@ -119,3 +119,20 @@ class User(TimeStampMixin, Base):
         secondary=user_permission, 
         back_populates="users"
     )
+
+    # ✅ ADDED: Departments created/updated/deleted by this user
+    created_departments = relationship(
+        "Department",
+        back_populates="creator",
+        foreign_keys="Department.created_by_user_id"
+    )
+    updated_departments = relationship(
+        "Department",
+        back_populates="updater",
+        foreign_keys="Department.updated_by_user_id"
+    )
+    deleted_departments = relationship(
+        "Department",
+        back_populates="deleter",
+        foreign_keys="Department.deleted_by_user_id"
+    )

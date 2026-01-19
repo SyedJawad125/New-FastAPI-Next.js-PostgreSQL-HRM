@@ -45,6 +45,12 @@ PERMISSIONS = [
     {"name": "Read Employee", "code": "read_employee", "module_name": "Employee", "description": "User can read employee"},
     {"name": "Update Employee", "code": "update_employee", "module_name": "Employee", "description": "User can update employee"},
     {"name": "Delete Employee", "code": "delete_employee", "module_name": "Employee", "description": "User can delete employee"},
+
+    # ---------- Department ----------
+    {"name": "Create Department", "code": "create_department", "module_name": "Department", "description": "User can create department"},
+    {"name": "Read Department", "code": "read_department", "module_name": "Department", "description": "User can read department"},
+    {"name": "Update Department", "code": "update_department", "module_name": "Department", "description": "User can update department"},
+    {"name": "Delete Department", "code": "delete_department", "module_name": "Department", "description": "User can delete department"},
 ]
 
 
