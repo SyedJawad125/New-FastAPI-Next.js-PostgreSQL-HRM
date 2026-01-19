@@ -1,19 +1,3 @@
-# # app.py
-# from fastapi import FastAPI
-# import joblib
-# import pandas as pd
-
-# app = FastAPI()
-# model = joblib.load("house_price_model.pkl")
-
-# @app.post("/predict")
-# def predict(data: dict):
-#     df = pd.DataFrame([data])
-#     prediction = model.predict(df)[0]
-#     return {"predicted_price": round(prediction, 2)}
-
-
-
 from fastapi import APIRouter, HTTPException
 import joblib
 import pandas as pd
